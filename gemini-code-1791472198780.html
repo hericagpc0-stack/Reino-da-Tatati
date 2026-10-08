@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reino da Tatati | Cursos, Receitas & Comunidade de Artesanato</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome (Ícones Oficiais das Redes e Marcas) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <style>
+    .brand-shopee { color: #EE4D2D; }
+    .brand-mercadolivre { color: #FFE600; }
+    .brand-tiktok { color: #000000; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans">
+
+  <!-- Header / Barra de Navegação -->
+  <header class="sticky top-0 z-50 bg-white border-b border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <span class="text-2xl font-bold text-pink-600">👑 Reino da Tatati</span>
+      </div>
+      <nav class="hidden md:flex space-x-6 text-sm font-medium text-slate-600">
+        <a href="#loja" class="hover:text-pink-600 transition">Produtos</a>
+        <a href="#receitas" class="hover:text-pink-600 transition">Receitas</a>
+        <a href="#cursos" class="hover:text-pink-600 transition">Cursos</a>
+        <a href="#comunidade" class="hover:text-pink-600 transition">Comunidade & Chat</a>
+        <a href="#parceiros" class="hover:text-pink-600 transition">Insumos</a>
+      </nav>
+      <div class="flex items-center space-x-3">
+        <button onclick="openAuthModal('login')" class="text-slate-700 hover:text-pink-600 text-sm font-semibold px-3 py-2">
+          Entrar
+        </button>
+        <button onclick="openAuthModal('register')" class="bg-pink-600 hover:bg-pink-700 text-white text-sm font-semibold px-4 py-2 rounded-lg shadow transition">
+          Criar Conta
+        </button>
+        <button onclick="openAuthModal('adm')" class="text-xs text-slate-400 hover:text-slate-600 ml-2" title="Acesso ADM">
+          <i class="fa-solid fa-lock"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-pink-50 via-purple-50 to-indigo-50 py-16 px-4 border-b border-pink-100">
+    <div class="max-w-5xl mx-auto text-center">
+      <span class="bg-pink-100 text-pink-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+        Plataforma de Empreendedorismo Manual
+      </span>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mt-4 leading-tight">
+        Aprenda, Crie e Transforme seu Crochê e Amigurumi em Renda
+      </h1>
+      <p class="text-base md:text-lg text-slate-600 mt-4 max-w-2xl mx-auto">
+        Acesse receitas técnicas gratuitas, capacite-se com nossos cursos exclusivos, participe da nossa comunidade de trocas e adquira materiais e produtos de alta qualidade.
+      </p>
+      <div class="mt-8 flex justify-center gap-4 flex-wrap">
+        <a href="#receitas" class="bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-6 rounded-lg shadow transition">
+          Ver Receitas Gratuitas
+        </a>
+        <a href="#cursos" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg shadow transition">
+          Conhecer Cursos
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Módulo 1: Cursos & Capacitação Profissional -->
+  <section id="cursos" class="py-16 max-w-7xl mx-auto px-4">
+    <div class="text-center">
+      <h2 class="text-3xl font-bold text-slate-900">Cursos de Amigurumi & Crochê</h2>
+      <p class="text-slate-600 mt-2">Capacitação do nível básico ao avançado com foco em acabamento perfeito e precificação comercial.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+      
+      <!-- Curso 1 -->
+      <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition">
+        <div class="bg-purple-600 h-32 flex items-center justify-center text-white text-4xl">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <div class="p-6">
+          <span class="text-xs font-bold uppercase text-purple-600 bg-purple-50 px-2 py-1 rounded">Iniciante</span>
+          <h3 class="text-xl font-bold text-slate-900 mt-2">Fundamentos do Amigurumi Perfeito</h3>
+          <p class="text-slate-600 text-sm mt-2">Técnicas de pontos invisíveis, escolha correta de agulhas e enchimento uniforme.</p>
+          <div class="mt-6 flex items-center justify-between">
+            <span class="text-slate-900 font-bold">12 Aulas</span>
+            <button onclick="openAuthModal('register')" class="bg-purple-600 hover:bg-purple-700 text-white text-sm font-semibold px-4 py-2 rounded-lg transition">
+              Matricular-se
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Curso 2 -->
+      <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition">
+        <div class="bg-pink-600 h-32 flex items-center justify-center text-white text-4xl">
+          <i class="fa-solid fa-[#000]"></i>
+          <i class="fa-solid fa-shirt"></i>
+        </div>
+        <div class="p-6">
+          <span class="text-xs font-bold uppercase text-pink-600 bg-pink-50 px-2 py-1 rounded">Intermediário</span>
+          <h3 class="text-xl font-bold text-slate-900 mt-2">Crochê Moderno e Moda Boho</h3>
+          <p class="text-slate-600 text-sm mt-2">Criação de croppeds, vestidos e peças de vestuário sob medida com ótimo caimento.</p>
+          <div class="mt-6 flex items-center justify-between">
+            <span class="text-slate-900 font-bold">18 Aulas</span>
+            <button onclick="openAuthModal('register')" class="bg-pink-600 hover:bg-pink-700 text-white text-sm font-semibold px-4 py-2 rounded-lg transition">
+              Matricular-se
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Curso 3 -->
+      <div class="bg-white rounded-xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition">
+        <div class="bg-indigo-600 h-32 flex items-center justify-center text-white text-4xl">
+          <i class="fa-solid fa-chart-line"></i>
+        </div>
+        <div class="p-6">
+          <span class="text-xs font-bold uppercase text-indigo-600 bg-indigo-50 px-2 py-1 rounded">Negócios</span>
+          <h3 class="text-xl font-bold text-slate-900 mt-2">Precificação & Vendas Online</h3>
+          <p class="text-slate-600 text-sm mt-2">Aprenda a calcular custos de produção, criar sua marca e divulgar nas redes sociais.</p>
+          <div class="mt-6 flex items-center justify-between">
+            <span class="text-slate-900 font-bold">8 Aulas</span>
+            <button onclick="openAuthModal('register')" class="bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-semibold px-4 py-2 rounded-lg transition">
+              Matricular-se
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Módulo 2: Comunidade, Troca de Receitas e Vendas -->
+  <section id="comunidade" class="py-16 bg-slate-100 border-t border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center">
+        <span class="bg-purple-100 text-purple-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+          Rede de Artesãs
+        </span>
+        <h2 class="text-3xl font-bold text-slate-900 mt-2">Comunidade & Fórum de Troca</h2>
+        <p class="text-slate-600 mt-1">Conecte-se com outras artesãs, compartilhe suas receitas, mostre seus trabalhos e gere vendas nas suas redes sociais.</p>
+      </div>
+
+      <div class="mt-10 bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden max-w-4xl mx-auto">
+        <!-- Topo do Chat -->
+        <div class="bg-slate-900 text-white p-4 flex justify-between items-center">
+          <div class="flex items-center space-x-3">
+            <span class="w-3 h-3 bg-green-500 rounded-full"></span>
+            <span class="font-bold text-sm">Bate-Papo da Comunidade Tatati</span>
+          </div>
+          <span class="text-xs text-slate-400">Exclusivo para membros cadastrados</span>
+        </div>
+
+        <!-- Área de Mensagens -->
+        <div class="p-6 h-80 overflow-y-auto space-y-4 bg-slate-50" id="chatBox">
+          <div class="flex items-start space-x-3">
+            <div class="w-8 h-8 rounded-full bg-pink-500 text-white flex items-center justify-center font-bold text-xs">MA</div>
+            <div class="bg-white p-3 rounded-xl border border-slate-200 shadow-sm text-sm max-w-md">
+              <span class="font-bold text-slate-900 block text-xs">Maria Artesã</span>
+              <p class="text-slate-700 mt-1">Pessoal, acabei de publicar uma adaptação da receita do Ursinho no meu Instagram! Quem quiser conferir o link para troca de seguidores e dicas!</p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-3">
+            <div class="w-8 h-8 rounded-full bg-purple-500 text-white flex items-center justify-center font-bold text-xs">CL</div>
+            <div class="bg-white p-3 rounded-xl border border-slate-200 shadow-sm text-sm max-w-md">
+              <span class="font-bold text-slate-900 block text-xs">Carla Crochê</span>
+              <p class="text-slate-700 mt-1">Alguém recomenda qual número de agulha fica melhor para usar no fio Amigurumi Soft?</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Input de Mensagem -->
+        <div class="p-4 bg-white border-t border-slate-200 flex gap-2">
+          <input type="text" id="chatInput" placeholder="Faça seu login para participar da conversa..." class="flex-1 border border-slate-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:border-pink-500"/>
+          <button onclick="sendChatMessage()" class="bg-pink-600 hover:bg-pink-700 text-white font-semibold px-5 py-2 rounded-lg text-sm transition">
+            Enviar
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Módulo 3: Fornecedores Oficiais (Diretrizes de Marca Respeitadas) -->
+  <section id="parceiros" class="py-16 max-w-7xl mx-auto px-4">
+    <div class="text-center">
+      <h2 class="text-3xl font-bold text-slate-900">Insumos & Lojas Recomendadas</h2>
+      <p class="text-slate-600 mt-2">Compre fios, agulhas e embalagens nos canais oficiais dos fornecedores.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+      
+      <!-- Shopee -->
+      <div class="bg-white p-6 rounded-xl border border-slate-200 text-center shadow-sm hover:border-orange-400 transition">
+        <div class="text-4xl brand-shopee mb-3">
+          <i class="fa-solid fa-bag-shopping"></i>
+        </div>
+        <h3 class="text-xl font-bold text-slate-900">Shopee</h3>
+        <p class="text-slate-600 text-sm mt-2">Kits de fios, agulhas ergonômicas e materiais com cupons de frete grátis.</p>
+        <a href="https://shopee.com.br" target="_blank" class="inline-flex items-center gap-2 mt-4 bg-[#EE4D2D] text-white font-semibold py-2 px-4 rounded-lg text-sm hover:opacity-90 transition">
+          <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i> Acessar Lojas na Shopee
+        </a>
+      </div>
+
+      <!-- Mercado Livre -->
+      <div class="bg-white p-6 rounded-xl border border-slate-200 text-center shadow-sm hover:border-yellow-400 transition">
+        <div class="text-4xl text-slate-900 mb-3">
+          <i class="fa-solid fa-box-open"></i>
+        </div>
+        <h3 class="text-xl font-bold text-slate-900">Mercado Livre</h3>
+        <p class="text-slate-600 text-sm mt-2">Enchimento acrílico siliconado e olhos de segurança com entrega rápida.</p>
+        <a href="https://mercadolivre.com.br" target="_blank" class="inline-flex items-center gap-2 mt-4 bg-yellow-400 text-slate-900 font-semibold py-2 px-4 rounded-lg text-sm hover:opacity-90 transition">
+          <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i> Acessar Mercado Livre
+        </a>
+      </div>
+
+      <!-- TikTok -->
+      <div class="bg-white p-6 rounded-xl border border-slate-200 text-center shadow-sm hover:border-slate-800 transition">
+        <div class="text-4xl brand-tiktok mb-3">
+          <i class="fa-brands fa-tiktok"></i>
+        </div>
+        <h3 class="text-xl font-bold text-slate-900">TikTok</h3>
+        <p class="text-slate-600 text-sm mt-2">Acompanhe demonstrações, novidades e tutoriais curtos no perfil oficial.</p>
+        <a href="https://tiktok.com" target="_blank" class="inline-flex items-center gap-2 mt-4 bg-black text-white font-semibold py-2 px-4 rounded-lg text-sm hover:opacity-90 transition">
+          <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i> Siga no TikTok
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Modal de Autenticação / Login / Cadastro / ADM -->
+  <div id="authModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm hidden z-50 flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl shadow-xl max-w-md w-full p-6 relative">
+      <button onclick="closeAuthModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 text-lg">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <!-- Formulário de Login -->
+      <div id="formLogin">
+        <h3 class="text-2xl font-bold text-slate-900">Entrar na sua Conta</h3>
+        <p class="text-slate-600 text-sm mt-1">Acesse suas aulas, receitas salvas e fórum.</p>
+        <form onsubmit="handleAuth(event, 'Login realizado com sucesso!')" class="mt-4 space-y-4">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase">E-mail</label>
+            <input type="email" required class="w-full border border-slate-300 rounded-lg p-2.5 text-sm mt-1 focus:ring-2 focus:ring-pink-500 focus:outline-none"/>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase">Senha</label>
+            <input type="password" required class="w-full border border-slate-300 rounded-lg p-2.5 text-sm mt-1 focus:ring-2 focus:ring-pink-500 focus:outline-none"/>
+          </div>
+          <button type="submit" class="w-full bg-pink-600 hover:bg-pink-700 text-white font-bold py-2.5 rounded-lg text-sm transition">
+            Entrar
+          </button>
+        </form>
+      </div>
+
+      <!-- Formulário de Cadastro -->
+      <div id="formRegister" class="hidden">
+        <h3 class="text-2xl font-bold text-slate-900">Criar Nova Conta</h3>
+        <p class="text-slate-600 text-sm mt-1">Junte-se à nossa comunidade de alunas artesãs.</p>
+        <form onsubmit="handleAuth(event, 'Conta criada com sucesso! Bem-vinda.')" class="mt-4 space-y-4">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase">Nome Completo</label>
+            <input type="text" required class="w-full border border-slate-300 rounded-lg p-2.5 text-sm mt-1 focus:ring-2 focus:ring-pink-500 focus:outline-none"/>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase">E-mail</label>
+            <input type="email" required class="w-full border border-slate-300 rounded-lg p-2.5 text-sm mt-1 focus:ring-2 focus:ring-pink-500 focus:outline-none"/>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase">Criar Senha</label>
+            <input type="password" required class="w-full border border-slate-300 rounded-lg p-2.5 text-sm mt-1 focus:ring-2 focus:ring-pink-500 focus:outline-none"/>
+          </div>
+          <button type="submit" class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-2.5 rounded-lg text-sm transition">
+            Cadastrar
+          </button>
+        </form>
+      </div>
+
+      <!-- Formulário de ADM -->
+      <div id="formADM" class="hidden">
+        <h3 class="text-2xl font-bold text-slate-900">Painel do Administrador</h3>
+        <p class="text-slate-600 text-sm mt-1">Acesso restrito para gestão de conteúdos.</p>
+        <form onsubmit="handleAuth(event, 'Acesso ADM Autorizado!')" class="mt-4 space-y-4">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase">Usuário ADM</label>
+            <input type="text" required placeholder="admin" class="w-full border border-slate-300 rounded-lg p-2.5 text-sm mt-1 focus:ring-2 focus:ring-slate-800 focus:outline-none"/>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase">Chave de Acesso / Senha</label>
+            <input type="password" required placeholder="••••••••" class="w-full border border-slate-300 rounded-lg p-2.5 text-sm mt-1 focus:ring-2 focus:ring-slate-800 focus:outline-none"/>
+          </div>
+          <button type="submit" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-2.5 rounded-lg text-sm transition">
+            Acessar Painel ADM
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="bg-slate-900 text-slate-400 py-8 border-t border-slate-800 text-center text-sm">
+    <div class="max-w-7xl mx-auto px-4">
+      <p class="font-bold text-white">👑 Reino da Tatati - Comunidade & Cursos de Crochê e Amigurumi</p>
+      <p class="mt-1 text-xs">Aprenda novas técnicas, acesse receitas e desenvolva sua renda artesanal.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts Interativos -->
+  <script>
+    function openAuthModal(type) {
+      document.getElementById('authModal').classList.remove('hidden');
+      document.getElementById('formLogin').classList.add('hidden');
+      document.getElementById('formRegister').classList.add('hidden');
+      document.getElementById('formADM').classList.add('hidden');
+
+      if (type === 'login') document.getElementById('formLogin').classList.remove('hidden');
+      if (type === 'register') document.getElementById('formRegister').classList.remove('hidden');
+      if (type === 'adm') document.getElementById('formADM').classList.remove('hidden');
+    }
+
+    function closeAuthModal() {
+      document.getElementById('authModal').classList.add('hidden');
+    }
+
+    function handleAuth(event, message) {
+      event.preventDefault();
+      alert(message);
+      closeAuthModal();
+    }
+
+    function sendChatMessage() {
+      const input = document.getElementById('chatInput');
+      if (!input.value.trim()) return;
+
+      const chatBox = document.getElementById('chatBox');
+      const newMessage = `
+        <div class="flex items-start space-x-3">
+          <div class="w-8 h-8 rounded-full bg-indigo-500 text-white flex items-center justify-center font-bold text-xs">VOCÊ</div>
+          <div class="bg-pink-50 p-3 rounded-xl border border-pink-200 shadow-sm text-sm max-w-md">
+            <span class="font-bold text-pink-700 block text-xs">Sua Mensagem</span>
+            <p class="text-slate-800 mt-1">${input.value}</p>
+          </div>
+        </div>
+      `;
+      chatBox.insertAdjacentHTML('beforeend', newMessage);
+      input.value = '';
+      chatBox.scrollTop = chatBox.scrollHeight;
+    }
+  </script>
+</body>
+</html>
